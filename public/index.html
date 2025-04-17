@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action ou Consommation</title>
+    <link rel="icon" href="/img/favicon.svg" />
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="main-background">
+        <div id="title-container">
+            <h1 id="title-text">Action 🎬 ou Consommation 🍷</h1>
+        </div>
+        <div class="centered">
+            <div id="start-screen" class="centered">
+                <div class="centered">
+                    <div class="input-group">
+                        <label for="input-participant-1"></label>
+                        <input type="text" name="input-participant-1" id="input-participant-1" autocomplete="off"
+                            placeholder="Nom 1">
+                        <span id="validation-participant-1" hidden>❗</span>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="input-group">
+                        <label for="input-participant-2"></label>
+                        <input type="text" name="input-participant-2" id="input-participant-2" autocomplete="off"
+                            placeholder="Nom 2">
+                        <span id="validation-participant-2" hidden>❗</span>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="checkbox-music" id="checkbox-music" checked>
+                        <label>Musique</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="checkbox" name="checkbox-sfx" id="checkbox-sfx" checked>
+                        <label>Effets sonores</label>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="centered">
+                    <button class="button" id="btn-start">
+                        Let's go!
+                    </button>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div id="participant-1-bar" class="participant-bar" hidden>
+                    <h3 id="participant-1-name"></h3>
+                    <hr>
+                    <div class="shot-container">
+                        <span class="shot-count" id="participant-1-shots">0</span>
+                        <button id="btn-add-shot-participant-1" class="btn-shot">🍷</button>
+                    </div>
+                </div>
+                <div class="centered">
+                    <div id="card-container" class="">
+                    </div>
+                    <button class="button text-center" id="btn-end" hidden>
+                        Quitter
+                    </button>
+                </div>
+                <div id="participant-2-bar" class="participant-bar" hidden>
+                    <h3 id="participant-2-name"></h3>
+                    <hr>
+                    <div class="shot-container">
+                        <span class="shot-count" id="participant-2-shots">0</span>
+                        <button id="btn-add-shot-participant-2" class="btn-shot">🍷</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
